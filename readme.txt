@@ -18,3 +18,7 @@ git diff filename
 git log查看历史版本
 头部数字采用sha1加密
 可以用HEAD^返回上一个版本
+git reset --hard number/"HEAD^"
+7.当回退到过去版本的时候，回不去了怎么办？
+使用git relog可以查看过去的命令从而找到之前的版本
+8.git的优秀之处在于他管理的是修改，是在git add之后的修改
