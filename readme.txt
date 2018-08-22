@@ -8,4 +8,8 @@
 git add filename 告诉git将文件添加到仓库缓存区
 git commit -m “注释” 告诉git将缓存区的内容提交到版本区域
 
-4.如何查看版本
+4.如何查看仓库是否发生改变
+git status
+
+5.如何查看具体改变了什么
+git diff filename
