@@ -13,3 +13,8 @@ git status
 
 5.如何查看具体改变了什么
 git diff filename
+
+6.如何查看历史版本
+git log查看历史版本
+头部数字采用sha1加密
+可以用HEAD^返回上一个版本
