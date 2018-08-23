@@ -57,7 +57,6 @@ git push -u origin master
 需要知道地址才能进行克隆
 git clone git@github.com:Liuxiangyang/gitskills.git
 
-
 13.如何创建和合并分支？
 git branch name创建分支
 git checkout -b dev创建并切换分支
@@ -70,3 +69,4 @@ git branch
 git branch -d dev
 
 15.如何合并冲突
+
