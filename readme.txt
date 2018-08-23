@@ -58,11 +58,15 @@ git push -u origin master
 git clone git@github.com:Liuxiangyang/gitskills.git
 
 
-13.如何创建和合并分支，如何解决冲突？
+13.如何创建和合并分支？
+git branch name创建分支
 git checkout -b dev创建并切换分支
 切换分支 git checkout 分支名称
 如何查看当前在哪个分支呢？
 git branch
 创建的新分支实际上相当于对原来状态的克隆
 
+14.如何删除分支
+git branch -d dev
 
+15.如何合并冲突
