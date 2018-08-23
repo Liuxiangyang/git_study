@@ -13,6 +13,10 @@ git status
 
 5.如何查看具体改变了什么
 git diff filename
+该命令只能查看未添加到暂存区的文件
+如果添加到暂存区中，那么git将会让暂存区的修改和工作区的修改进行比较
+所以可以指定，当前文件和版本库的文件进行比较
+git diff HEAD
 
 6.如何查看历史版本
 git log查看历史版本
@@ -35,3 +39,30 @@ git checkout -- readme.txt 丢弃这个工作区的修改，让其返回最新�
 
 11.如何添加远程库，也就是将本地版本库放到github进行备份？
 首先创建ssh密匙
+ssh-keygen -t rsa -C "youremail@example.com"
+然后将ssh的公匙的内容放到github服务器上
+
+添加远程库，需要在github上面创建一个仓库
+之后将本地仓库与远程仓库进行关联
+git add remote origin git@github.com:Liuxiangyang/git_study.git
+git push -u origin master
+如果不小心关联错了可以使用git remote remove origin
+
+当推送文件出现错误提示版本落后的时候，是因为远程仓库初始化多出了几个文件
+可以通过先git pull --rebase origin master(合并内容)
+之后再进行推送 git push -u origin master
+
+
+12.如何从远程库中克隆？
+需要知道地址才能进行克隆
+git clone git@github.com:Liuxiangyang/gitskills.git
+
+
+13.如何创建和合并分支，如何解决冲突？
+git checkout -b dev创建并切换分支
+切换分支 git checkout 分支名称
+如何查看当前在哪个分支呢？
+git branch
+创建的新分支实际上相当于对原来状态的克隆
+
+
