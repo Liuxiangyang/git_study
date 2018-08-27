@@ -17,6 +17,7 @@ git diff filename
 如果添加到暂存区中，那么git将会让暂存区的修改和工作区的修改进行比较
 所以可以指定，当前文件和版本库的文件进行比较
 git diff HEAD
+所以他们比较的是修改么？
 
 6.如何查看历史版本
 git log查看历史版本
@@ -69,4 +70,6 @@ git branch
 git branch -d dev
 
 15.如何合并冲突
-
+a.使用git checkout切换到分支主线进行修改
+b.提交之后切换回要合并主线，一般是master
+c.之后git merge nameofbranch
