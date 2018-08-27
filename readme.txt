@@ -73,3 +73,6 @@ git branch -d dev
 a.使用git checkout切换到分支主线进行修改
 b.提交之后切换回要合并主线，一般是master
 c.之后git merge nameofbranch
+
+16.如何管理冲突1
+a.当两个分支同一个位置出现两种不同的修改时
