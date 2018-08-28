@@ -93,3 +93,4 @@ b.在分支同一地区修改后，git merge --no-ff -m "merge with no-ff" dev
 2.这样做的话就会产生，不同人提交不同的分支，会有个先后的问题，有可能要先将分支拉取才可以，我将在19小结中进行使用分享问题
 
 19.it's a test
+test how to deal with the crash when change the cloud and local
